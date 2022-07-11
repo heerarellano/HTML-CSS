@@ -1,0 +1,67 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio:04_GLM_cols Grid Layout CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio: 04_GLM_cols Grid Layout CSS Module">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+	h1{text-align:center;}
+	strong{ color: darkblue; font-weight: bold;}
+	em{ color: red; font-weight: bold;}
+.grid-container {
+  /* 1. Indica display: grid;*/
+	display: grid;
+  /* 2. Luego indica grid-gap: 10px;*/
+   grid-gap: 10px;
+   /*grid-gap: 10px : Al principio los elementos estaban superpuestos, pero se realiza un espacio entre los elementos.*/
+  
+  /* 3.Por último insertacolumnas con grid-template-columns: 300px auto 200px; */
+  grid-template-columns: 300px auto 200px; 
+  /*grid-template-columns: 300px auto 200px : Los hace una matriz.*/
+
+  
+  background-color: rgba(0,93,99,1.00);
+  padding: 10px;
+}
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+	
+</style>
+</head>
+<body>
+
+<h1>grid-template-columns</h1>
+
+<p>Podemos usar medidas específicas o automáticas para una columna</p>
+
+<p>Ejemplo  usando <em>grid-template-columns: 300px auto 200px;</em> </p>
+
+	<div class="grid-container">
+	  <div class="grid-item">A</div>
+	  <div class="grid-item">B</div>
+	  <div class="grid-item">C</div>  
+	  <div class="grid-item">D</div>
+	  <div class="grid-item">E</div>
+	  <div class="grid-item">F</div>  
+	  <div class="grid-item">G</div>
+	  <div class="grid-item">H</div>
+	  <div class="grid-item">I</div>  
+	</div>
+	
+
+</body>
+</html>

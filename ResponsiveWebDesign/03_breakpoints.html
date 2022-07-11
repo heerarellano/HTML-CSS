@@ -1,0 +1,161 @@
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 03_breakpoints Responsive Web Design
+    Fecha: Jueves 20-agosto-2020
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Francisco Arellano Herdson Josué</title>
+<meta name="Description" content="Ejercicio: 03_breakpoints">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, shrink-to-feet=no" />
+    
+ <style>
+     /*Clase para el contenedor global*/
+    .container{
+     width: 80%;
+     margin: 0 auto; /*forza a centrado horizontal en la ventana*/
+     max-width: 1000px;
+
+    }
+
+     /*Observa que usamos medidas dinámicas*/
+     section{ 
+         background: #F9F5C9;
+         margin: 1% 0;
+         padding: 1% 0;
+
+     }
+     
+     /*Clase usamos para interrupir la flotación*/
+     .clear{ clear: both;}
+
+     .col2{
+
+        background: pink; 
+        width: 50%; 
+        margin: 1% 0;
+        padding: 1% ;
+        float: left; 
+        box-sizing: border-box;
+       
+     }
+
+
+     .col3{
+
+        background: pink; 
+        width: 33%; 
+        margin: 1% 0;
+        padding: 1% ;
+        float: left; 
+        box-sizing: border-box;
+      
+     }
+
+     .col4{
+        background: pink; 
+        width: 20%; 
+        margin: 1% 0 1% 0;
+        padding: 1%;
+        float: left; 
+        box-sizing: border-box;
+      
+     }
+
+     nav ul{
+        margin: auto; 
+        width: 450;
+        background: cyan; 
+        padding: 0; 
+     }
+
+     nav ul li{
+        text-align: center; 
+        width: 33.33%; 
+        background:  lightpink; 
+        list-style: none; 
+        padding: 10px 0; 
+        float: left;
+     }
+
+     nav ul li:hover{
+        background: #E44DFE; 
+     }
+
+     nav ul li a{
+        text-decoration: none; 
+        color: darkblue;
+     }
+
+      @media screen and (max-width: 768px){
+
+        .container, nav ul, .col2, .col3, .col4{
+          width: 100%;
+        }
+      }
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            NOMBRE DE LA PÁGINA
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+                <br class="clear"> 
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <article class="col2">
+                    Mi columna 1
+                </article>
+                <article class="col2">
+                   Mi columna2
+                </article>
+                 <br class="clear">  
+                </section>
+                <section>
+                <article class="col3">
+                    Mi columna 1
+                </article>
+                <article class="col3">
+                   Mi columna 2
+                </article>
+                <article class="col3">  
+                   Mi columna 3
+                </article>
+                <br class="clear">  
+            </section>
+            <section>
+                <article class="col4">
+                    Mi columna 1
+                </article>
+                <article class="col4">
+                    Mi columna 2
+                </article>
+                <article class="col4">
+                    Mi columna 3
+                </article>
+                 <article class="col4">
+                    Mi columna 4
+                </article>
+                <article class="col4">
+                   Mi columna 5
+                </article>
+                <br class="clear"> 
+            </section>
+        </main>
+        <footer>Información legal 2019</footer> 
+    </div>  
+</body>
+</html>

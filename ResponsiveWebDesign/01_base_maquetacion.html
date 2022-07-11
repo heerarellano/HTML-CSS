@@ -1,0 +1,127 @@
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 01_base_maquetación Responsive Web Design
+    Fecha: Jueves 20-agosto-2020
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Francisco Arellano Herdson Josué</title>
+<meta name="Description" content="Ejercicio: 01_base_maquetación">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, shrink-to-feet=no" />
+    
+ <style>
+     /*Clase para el contenedor global*/
+    .container{
+     width: 800px;
+     margin: auto; /*forza a centrado horizontal en la ventana*/
+    }
+
+     /*Observa que usamos medidas dinámicas*/
+     section{ 
+         background: #F9F5C9;
+         margin: 1% 0;
+         padding: 1% 0;
+
+     }
+     
+     /*Clase usamos para interrupir la flotación*/
+     .clear{ clear: both;}
+
+     .col2{
+
+        background: pink; 
+        width: 50%; 
+        margin: 1% 0;
+        padding: 1% ;
+        float: left; 
+        box-sizing: border-box;
+       
+     }
+
+
+     .col3{
+
+        background: pink; 
+        width: 33%; 
+        margin: 1% 0;
+        padding: 1% ;
+        float: left; 
+        box-sizing: border-box;
+      
+     }
+
+     .col4{
+        background: pink; 
+        width: 20%; 
+        margin: 1% 0 1% 0;
+        padding: 1%;
+        float: left; 
+        box-sizing: border-box;
+      
+     }
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            NOMBRE DE LA PÁGINA
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <article class="col2">
+                    Mi columna 1
+                </article>
+                <article class="col2">
+                   Mi columna2
+                </article>
+                 <br class="clear">  
+                </section>
+                <section>
+                <article class="col3">
+                    Mi columna 1
+                </article>
+                <article class="col3">
+                   Mi columna 2
+                </article>
+                <article class="col3">  
+                   Mi columna 3
+                </article>
+                <br class="clear">  
+            </section>
+            <section>
+                <article class="col4">
+                    Mi columna 1
+                </article>
+                <article class="col4">
+                    Mi columna 2
+                </article>
+                <article class="col4">
+                    Mi columna 3
+                </article>
+                 <article class="col4">
+                    Mi columna 4
+                </article>
+                <article class="col4">
+                   Mi columna 5
+                </article>
+                <br class="clear"> 
+            </section>
+        </main>
+        <footer>Información legal 2019</footer> 
+    </div>  
+</body>
+</html>

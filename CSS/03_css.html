@@ -1,0 +1,77 @@
+<!-- 
+	Francisco Arellano Herdson Josué
+	Ejercicio  03_css.html Box Model
+	Martes 18-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Francisco Arellano Herdson Josué</title>
+<meta name="Description" content="Ejercicio 03_css.html">
+    
+ <style>
+    span p:first-child{color: red;}
+    span p:last-child{color: blue;}
+    span p:nth-child(4){color: pink;}
+
+ 	h1{color: red; }
+    h3{color: red;} 
+    #subtitulo{color: green;} 
+    .parrafo{color: blue;}
+    .pink:hover{ color: pink;}
+
+    #box{
+        width: 800px; 
+        background: cyan; 
+    }
+
+    .inline, .block{
+        color: white;
+        margin: 10px; 
+        padding: 10px; 
+        background: purple; 
+        border:  3px solid green; 
+    }
+
+    .block{
+        background: red; 
+    }
+     
+</style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Ejemplo de título</h1>
+        <h2 id="subtitulo">El subtítulo</h2>
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quisquam facere odio necessitatibus dicta maxime illo aliquam dolores possimus omnis esse officia laudantium quas obcaecati, accusantium eligendi cupiditate sequi eum.</p>
+        <span>
+            <p>Pan</p>
+            <p>Aceite</p>
+            <p>Atún</p>
+            <p>Almendras</p>
+            <p class="pink" >Café</p>
+            <p>Chocolate</p>
+            <p>Gomitas</p>
+            <p>Dulces</p>
+            <p>Cereal</p>
+        </span>
+    </div>
+
+    <div id="box">
+        <span class="inline">hola</span>
+        <span class="inline">¿cómo</span>
+        <span class="inline">esta</span>
+        <span class="inline">tú día?</span>
+    
+        <div class="block">Muy</div>
+        <div class="block">bien</div>
+        <div class="block">gracias</div>
+        <div class="block">¿y tú día?</div>
+        
+    </div> 
+</body>
+</html>

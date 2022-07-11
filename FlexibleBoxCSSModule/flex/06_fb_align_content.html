@@ -1,0 +1,77 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 6_fb_align_items_content Flexible Box CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio 6_fb_align_items_content Flexible Box CSS Module">
+<style>
+.contenedor {
+  /* 1. Prueba antes de modificar.*/
+  /* 2. Indica display: flex; a continuación*/
+  display: flex;
+
+  /* 3. Declara align-items: center; y prueba. ES PARA ESPACIAR LINEAS ENTRE SÍ */
+  align-items: center;
+  /*center: Hace un espacio entre los elementos.*/
+
+  /*4. Agrega también flex-wrap: wrap; y prueba */
+  flex-wrap: wrap;
+	/*  flex-wrap: wrap; : Ordena los elementos como una matriz. */
+
+  /* 5. Declara  align-content: center; ES PARA INDICAR POSICIÓN DE ELEMENTOS DE DENTRO DE UNA LÍNEA*/
+   align-content: space-around;
+
+
+
+  /* 6. Cambia los valores para align-content flex-start, flex-end, space-between, space-around y  stretch;*/	
+
+    /*flex-start: Los elmentos se mueven al final del eje cruzado */
+    /*flex-end: Los elmentos se mueven al principio del eje cruzado  */
+   /*space-between: Realiza un espacio entre los elementos pero el elemento que contiene "N y más y más" se sale del borde azul. */
+   /*space-around: Realiza un espacio entre los elementos pero el elemento que contiene "N y más y más" y el elemento que contiene "A y más y más" se salen del borde azul. */
+
+
+
+  height: 400px;
+  background-color: #0C3F7A;
+}
+
+.contenedor > div {
+  background-color: #FFF;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Flexible Box align-content</h1>
+
+<div class="contenedor">
+  <div>A y más y más </div>
+  <div>B</div>
+  <div>C</div>  
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>  
+  <div>G</div>
+  <div>H</div>
+  <div>I y más</div>
+  <div>J</div>
+  <div>K</div>  
+  <div>L</div>
+  <div>M</div>
+  <div>N y más y más</div>  
+  <div>Ñ</div>
+  <div>O</div>
+</div>
+</body>
+</html>

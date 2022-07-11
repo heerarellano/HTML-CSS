@@ -1,0 +1,99 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio:05_GLM_lines Grid Layout CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio 05_GLM_lines Grid Layout CSS Module">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+	h1{text-align:center;}
+	strong{ color: darkblue; font-weight: bold;}
+	em{ color: red; font-weight: bold;}
+
+
+.grid-container{
+  /*+++++++++++++++++++++++++++++++++++++++++++*
+        ESTE ES SOLO UN EJEMPLO PARA PODER 
+	     RESOLVER EL SIGUIENTE EJERCICIO
+	
+	  OBSERVA ABAJO LOS ESTILOS PARA LOS ITEMS
+    +++++++++++++++++++++++++++++++++++++++++++*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: rgba(0,93,99,1.00);
+  padding: 10px;
+}
+
+.grid-container2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: rgba(0,59,131,1.00);
+  padding: 10px;
+}
+
+.grid-container > div,
+.grid-container2 > div	{
+  color: darkblue;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item1_B {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Grid lines</h1>
+
+<p>El grid es divisible en columnas y celdas de distinto ancho al indicar los sufijos <strong> start</strong> y <strong>end</strong></p>
+
+<p>Ejemplo  usando <em>grid-column-start: 1;</em> y <em> grid-column-end: 3;</em></p>
+
+	<div class="grid-container">
+	  <div class="item1">A</div>
+	  <div class="item2">B</div>
+	  <div class="item3">C</div>  
+	  <div class="item4">D</div>
+	  <div class="item5">E</div>
+	  <div class="item6">F</div>
+	  <div class="item7">G</div>
+	  <div class="item8">H</div>  
+	</div>
+<p>Ejemplo  usando <em>grid-row-start: 1;</em> y <em> grid-row-end: 3;</em></p>
+	
+	<div class="grid-container2">
+	  <div class="item1_B">A</div>
+	  <div class="item2_B">B</div>
+	  <div class="item3_B">C</div>  
+	  <div class="item4_B">D</div>
+	  <div class="item5_B">E</div>
+	  <div class="item6_B">F</div>
+	  <div class="item7_B">G</div>
+	  <div class="item8_B">H</div>  
+	</div>
+	
+
+</body>
+</html>

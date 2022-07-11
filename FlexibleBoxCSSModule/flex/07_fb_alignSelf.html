@@ -1,0 +1,51 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 07_fb_alignSelf Flexible Box CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio: 07_fb_alignSelf Flexible Box CSS Module">
+<style>
+.contenedor {
+  /*Prueba antes de iniciar. 
+	Despues mira las últimas dos reglas de estilo, líneas 26 y 29, cambia los valores y prueba.*/
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  height: 400px;
+  background-color: #0C3F7A;
+}
+
+.contenedor > div {
+  background-color: #FFF;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  
+  line-height: 75px;
+  font-size: 30px;
+    }
+    .contenedor > div:nth-child(2) {
+        align-self: space-between;/*cambia este valor*/  
+    }
+     .contenedor > div:nth-child(3) {
+        align-self: flex-start; /*cambia este valor*/ 
+    }
+</style>
+</head>
+<body>
+<h1>Flexible Box justify-content</h1>
+
+<div class="contenedor">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>  
+
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 5_fb_align_items  Flexible Box CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio 5_fb_align_items  Flexible Box CSS Module">
+<style>
+.contenedor {
+  /* 1. Prueba antes de modificar.*/
+  /* 2. Indica display: flex; a continuación*/
+  display: flex;
+  
+  /* 3. Declara align-items: stretch; ( de hecho es el valor por default) */ 
+  align-items: baseline;
+
+  /* 4. Intenta ahora probando al cambiar el valor a flex-start, center, flex-end, stretch y baseline */
+
+  /*Observaciones*/
+  /*flex-start: El área blanca de cada columna se redució.*/
+  /*center: Centro las letras. */
+  /*flex-end: Mueve las letras hacia el final del eje cruzado.*/
+  /*stretch: El área blaca de las letras vuelve aparecer.*/
+  /*baseline: Mantiene alineados los elementos, de lo contrario no se ve la diferencia, ya que todos los elementos aparecen como al principio del ejercico.*/
+	
+	/*El valor baseline no tendra efectos, cambia a diferentes tamaños las etiquetas de texto (h3, h6, h2 por ejemplo) para verlo en acción*/
+  height: 400px;
+  background-color: #0C3F7A;
+}
+
+.contenedor > div {
+  background-color: #FFF;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+h1{
+  font-size: 100%; 
+}
+
+h2{
+   font-size: 50%; 
+
+}
+
+h3{
+  font-size: 25%; 
+}
+
+</style>
+</head>
+<body>
+<h1>Flexible Box align-items</h1>
+
+<div class="contenedor">
+  <div><h1>A</h1></div>
+  <div><h2>B</h2></div>
+  <div><h3>C</h3></div>  
+  <div><h1>D</h1></div>
+  <div><h2>E</h2></div>  
+  <div><h3>F</h3></div> 
+
+</div>
+</body>
+</html>

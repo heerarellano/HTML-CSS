@@ -1,0 +1,61 @@
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio:03_GLM_rows Grid Layout CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio: 03_GLM_rows Grid Layout CSS Module">
+<style>
+	h1{text-align:center;}
+	strong{ color: darkblue; font-weight: bold;}
+	em{ color: red; font-weight: bold;}
+.grid-container{
+  /* 1. Inserta display: grid; */
+	display: grid;
+  /* 2. Aqui escribe grid-row-gap: 10px; */
+   grid-row-gap: 10px; 
+  /*Hace un espacio entre las columnas.*/
+
+  /* 3. Asigna tres filas con grid-template-rows: 300px auto 200px; */
+  grid-template-rows: 300px auto 200px;
+  
+  
+  background-color: rgba(0,93,99,1.00);
+  padding: 10px;
+
+}
+	
+.grid-item {
+  color: darkblue;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+	
+</style>
+</head>
+<body>
+
+<h1>grid-template-ROW</h1>
+
+<p>Podemos usar medidas específicas o automáticas para una celda</p>
+
+<p>Ejemplo  usando <em>grid-template-columns: 300px auto 200px;</em> </p>
+
+	<div class="grid-container">
+	  <div class="grid-item">A</div>
+	  <div class="grid-item">B</div>
+	  <div class="grid-item">C</div>  
+
+	</div>
+	
+
+</body>
+</html>

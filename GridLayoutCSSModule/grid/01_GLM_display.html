@@ -1,0 +1,77 @@
+
+
+<!--
+    Francisco Arellano Herdson Josué
+    Ejercicio: 01_GLM_display Grid Layout CSS Module
+    Fecha: Viernes 21-agosto-2020
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<meta name="Description" content="Ejercicio: 01_GLM_display Flexible Box CSS Module">
+<style>
+	h1{text-align:center;}
+	strong{ color: darkblue; font-weight: bold;}
+	em{ color: red; font-weight: bold;}
+.grid-container, .grid-container2{
+  /* 1. Indica display: grid; */
+	display: grid;
+	
+  /* 2. Indica 3 columnas con grid-template-columns: auto auto auto;*/
+
+  grid-template-columns: auto auto auto;
+	
+  background-color: rgba(0,93,99,1.00);
+  padding: 10px;
+}
+.grid-container2{
+  /* 3. Indica display: display: inline-grid; para comparar con el anterior*/
+  display: inline-grid;
+  /*display: inline-grid : Una columna aparece grande y la otra pequeña*/
+}
+.grid-item {
+  color: blue;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Items</h1>
+
+<p>Para usar <strong>Grid Layout</strong> se designa un elemento contenedor con propiedad <em>display: grid;</em>.</p>
+
+<p>Los hijos directos del contenedor grid se convierten en <strong>grid items.</strong></p>
+
+	<div class="grid-container">
+	  <div class="grid-item">A</div>
+	  <div class="grid-item">B</div>
+	  <div class="grid-item">C</div>  
+	  <div class="grid-item">D</div>
+	  <div class="grid-item">E</div>
+	  <div class="grid-item">F</div>  
+	  <div class="grid-item">G</div>
+	  <div class="grid-item">H</div>
+	  <div class="grid-item">I</div>  
+	</div>
+	<p>También se puede designar con <em>display: inline-grid</em></p>
+	<div class="grid-container2">
+	   <div class="grid-item">A</div>
+	  <div class="grid-item">B</div>
+	  <div class="grid-item">C</div>  
+	  <div class="grid-item">D</div>
+	  <div class="grid-item">E</div>
+	  <div class="grid-item">F</div>  
+	  <div class="grid-item">G</div>
+	  <div class="grid-item">H</div>
+	  <div class="grid-item">I</div>  
+	</div>
+
+</body>
+</html>
